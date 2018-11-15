@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ArrivalTimer</string>
+    <string name="transportation_walk">徒歩</string>
+    <string name="transportation_car">車</string>
+    <string name="button_search">検索</string>
+</resources>
