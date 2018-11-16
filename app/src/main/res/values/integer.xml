@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="textSize_searchScreen_normal">15</integer>
+    <integer name="rotation_90">90</integer>
+    <integer name="margin_searchScreen_container">10</integer>
+</resources>

@@ -3,4 +3,9 @@
     <string name="transportation_walk">徒歩</string>
     <string name="transportation_car">車</string>
     <string name="button_search">検索</string>
+    <string name="text_from">出発</string>
+    <string name="text_to">到着</string>
+    <string name="text_interval">～</string>
+    <string name="text_departureTime_title">出発時刻：</string>
+    <string name="text_departureTime_format">%d月%d日 %d時%d分</string>
 </resources>
