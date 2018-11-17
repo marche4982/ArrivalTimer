@@ -34,7 +34,7 @@
             android:id="@+id/imageButton_searchScreen_from"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="null"
+            android:background="@null"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/icon_search" />
     </LinearLayout>
@@ -81,7 +81,7 @@
             android:id="@+id/imageButton_searchScreen_to"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="null"
+            android:background="@null"
             android:layout_margin="5dp"
             app:srcCompat="@drawable/icon_search" />
     </LinearLayout>
