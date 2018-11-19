@@ -6,16 +6,17 @@ import android.support.v7.widget.AppCompatEditText;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * Created by youyou on 2018/11/17.
  */
 
-public class MyEditText extends android.support.v7.widget.AppCompatEditText {
+public class MyTextView extends android.support.v7.widget.AppCompatTextView implements View.OnClickListener {
 
     private boolean bIsTouched = false; // タッチフラグ
 
-    MyEditText(Context context){
+    MyTextView(Context context){
         super(context);
     }
 
@@ -32,5 +33,13 @@ public class MyEditText extends android.support.v7.widget.AppCompatEditText {
         }
 
         return true;    // タッチイベントの消化
+    }
+
+    @Override
+    public void onClick(View v) {
+        TextView textView = (TextView)v;
+        String myText = textView.getText().toString();
+
+        // Google Map を開く。
     }
 }

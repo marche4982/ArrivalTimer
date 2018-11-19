@@ -2,43 +2,33 @@ package com.example.youyou.arrivaltimer;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 /**
  * Created by youyou on 2018/11/17.
  */
 
-public class SearchScreen extends AppCompatActivity {
+public class SearchScreen extends AppCompatActivity{
 
-    private ImageButton imgBtnSearchFrom;   // 検索ボタン（From）
-    private ImageButton imgBtnSearchTo;     // 検索ボタン（To)
+    private MyLatLong mLatLongFrom; // 緯度経度(From)
+    private MyLatLong mLatLongTo;   // 緯度経度(To)
 
-    private MyEditText editText_SearchFrom; // 検索テキスト(From)
-    private MyEditText editText_SearchTo;    // 検索テキスト(To)
+    private MyTextView textView_SearchFrom; // 検索テキスト(From)
+    private MyTextView textView_SearchTo;    // 検索テキスト(To)
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editText_SearchFrom = (MyEditText)findViewById(R.id.editText_searchScreen_from);
-        editText_SearchTo = (MyEditText)findViewById(R.id.editText_searchScreen_to);
+        textView_SearchFrom = (MyTextView)findViewById(R.id.editText_searchScreen_from);
+        textView_SearchFrom.setOnClickListener(textView_SearchFrom);
 
-        imgBtnSearchFrom = (ImageButton)findViewById(R.id.imageButton_searchScreen_from);
-        imgBtnSearchFrom.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // テキスト内の文言からGoogleMap 検索
-            }
-        });
+        textView_SearchTo = (MyTextView)findViewById(R.id.editText_searchScreen_to);
+        textView_SearchTo.setOnClickListener(textView_SearchTo);
 
-        imgBtnSearchTo = (ImageButton)findViewById(R.id.imageButton_searchScreen_to);
-        imgBtnSearchTo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // テキスト内の文言からGoogleMap 検索
-            }
-        });
     }
 }
